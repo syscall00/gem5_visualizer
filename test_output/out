@@ -1,0 +1,35 @@
+Global frequency set at 1000000000000 ticks per second
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 22.1.0.0
+gem5 compiled Jul 19 2023 23:47:22
+gem5 started Jul 21 2023 13:09:12
+gem5 executing on 1b54ea75a5fa, pid 120
+command line: /gem5/gem5/build/RISCV/gem5.opt --debug-flags=MinorGUI /gem5/gem5/configs/example/se.py --caches --cpu-type RiscvMinorCPU -c really_intersting_program
+
+**** REAL SIMULATION ****
+    500: system.cpu.decode: Log4GUI: decode: 500: 0: 0: 
+    500: system.cpu.fetch1: Log4GUI: fetch1: 500: 1: 0: <assembly>
+   1000: system.cpu.decode: Log4GUI: decode: 1000: 0: 0: 
+   1000: system.cpu.fetch1: Log4GUI: fetch1: 1000: 1: 0: <assembly>
+  78500: system.cpu.decode: Log4GUI: decode: 78500: 0: 0: 
+  78500: system.cpu.fetch1: Log4GUI: fetch1: 78500: 0: 1054c: <assembly>
+  79000: system.cpu.decode: Log4GUI: decode: 79000: 0: 1054c: jal ra, 34
+  79000: system.cpu.fetch1: Log4GUI: fetch1: 79000: 1: 0: <assembly>
+  79500: system.cpu.execute: Log4GUI: execute: 79500: 0: 1054c: jal ra, 34: 0
+  79500: system.cpu.decode: Log4GUI: decode: 79500: 0: 10550: c_mv a5, a0
+  79500: system.cpu.fetch1: Log4GUI: fetch1: 79500: 1: 0: <assembly>
+  80000: system.cpu.execute: Log4GUI: execute: 80000: 0: 10550: c_mv a5, a0: 0
+  80000: system.cpu.decode: Log4GUI: decode: 80000: 1: 0: 
+  80000: system.cpu.fetch1: Log4GUI: fetch1: 80000: 1: 0: <assembly>
+  80500: system.cpu.decode: Log4GUI: decode: 80500: 0: 10552: auipc a0, 0
+  80500: system.cpu.fetch1: Log4GUI: fetch1: 80500: 1: 0: <assembly>
+  81000: system.cpu.decode: Log4GUI: decode: 81000: 1: 0: 
+  81000: system.cpu.fetch1: Log4GUI: fetch1: 81000: 1: 0: <assembly>
+  81500: system.cpu.decode: Log4GUI: decode: 81500: 0: 0: 
+  81500: system.cpu.fetch1: Log4GUI: fetch1: 81500: 1: 0: <assembly>
+ 130500: system.cpu.decode: Log4GUI: decode: 130500: 0: 0: 
+ 130500: system.cpu.fetch1: Log4GUI: fetch1: 130500: 1: 0: <assembly>
+ 131000: system.cpu.decode: Log4GUI: decode: 131000: 0: 0: 
+ 131000: system.cpu.fetch1: Log4GUI: fetch1: 131000: 1: 0: <assembly>
